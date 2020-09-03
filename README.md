@@ -26,7 +26,7 @@ NB! Make sure to run the command from within the project folder!
 $ pwd
 /home/myuser/bolt-example/k8s_poc
 
-$ bolt plan run k8s_poc::install -t controllers src=k8s_poc/cloud-config
+$ bolt plan run k8s_poc::install
 Starting: plan k8s_poc::install
 Starting: Upload cloud-config to K8S nodes on 7 nodes
 Finished: Upload cloud-config to K8S nodes with 0 failures in 4.12 sec
