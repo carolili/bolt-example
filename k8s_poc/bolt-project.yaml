@@ -1,0 +1,4 @@
+# k8s_poc/bolt-project.yaml
+name: k8s_poc
+plans:
+- k8s_poc::install

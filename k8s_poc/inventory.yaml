@@ -1,0 +1,24 @@
+config:
+  transport: ssh
+  ssh:
+    user: root
+    private-key: ~/.ssh/my-bolt-key
+groups:
+- name: controllers
+  targets:
+    - uri: controller01.example.com:22
+      name: controller01
+    - uri: controller02.example.com:22
+      name: controller02
+    - uri: controller03.example.com:22
+      name: controller03
+- name: workers
+  targets:
+    - uri: worker01.example.com:22
+      name: worker01
+    - uri: worker02.example.com:22
+      name: worker02
+    - uri: worker03.example.com:22
+      name: worker03
+    - uri: worker04.example.com:22
+      name: worker04

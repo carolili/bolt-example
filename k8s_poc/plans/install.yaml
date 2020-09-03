@@ -1,0 +1,8 @@
+# site-modules/k8s_poc/plans/install.yaml
+steps:
+  - upload: k8s_poc/cloud-config
+    destination: /etc/kubernetes/cloud-config
+    targets: 
+      - controllers
+      - workers
+    description: "Upload cloud-config to K8S nodes"
